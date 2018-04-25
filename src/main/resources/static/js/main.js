@@ -1,1 +1,1 @@
-angular.module('systemjason', []);
+angular.module('systemjason', [ 'minhasDiretivas' ]);

@@ -9,6 +9,7 @@
 <script src="js/lib/angular.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/controllers/index-controller.js"></script>
+<script src="js/directives/minhas-diretivas.js"></script>
 </head>
 <body ng-controller="IndexController">
 	<div class="container">
@@ -19,7 +20,8 @@
 
 		<h2>Linguagens</h2>
 		<div ng-repeat="lang in linguagens">
-			<label>{{lang.nome}}</label> </br>
+			<linguagem nome="{{lang.nome}}"></linguagem>
+			</br>
 		</div>
 
 	</div>

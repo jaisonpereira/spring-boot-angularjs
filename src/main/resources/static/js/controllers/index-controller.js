@@ -21,10 +21,9 @@ angular.module('systemjason').controller('IndexController',
 			 * Efetuando uma req get para recuperar os dados do backend
 			 */
 			$http.get('/linguagens/list/').success(function(data) {
-				$scope.linguagens = .data;
-			}).error(function(error){
+				$scope.linguagens = data;
+			}).error(function(error) {
 				console.error(error)
-				
 			});
 
 		});
