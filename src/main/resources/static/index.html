@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="systemjason">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Jason Web System</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<script src="js/lib/angular.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/controllers/index-controller.js"></script>
+</head>
+<body ng-controller="IndexController">
+	<div class="container">
+		<h1 class="text-center">Jason Web System</h1>
+
+		<label>Desenvolvedor : {{desenvolvedor.nome}}</label> <label>Nível
+			: {{desenvolvedor.nivel}}</label>
+
+		<h2>Linguagens</h2>
+		<div ng-repeat="lang in linguagens">
+			<label>{{lang.nome}}</label> </br>
+		</div>
+
+	</div>
+	<!-- fim container -->
+</body>
+</html>

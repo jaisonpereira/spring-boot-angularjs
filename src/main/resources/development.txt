@@ -1,0 +1,9 @@
+#Projeto Spring Boot#
+
+criar projeto a partir do site
+https://start.spring.io/
+adicionar 
+Web , JPA ,H2 (para testes)
+
+
+criar index.html em src/main/resources/static
