@@ -21,7 +21,6 @@ public class UsuarioService {
 	public void save(Usuario user) {
 		valid(user);
 		repository.save(user);
-
 	}
 
 }
