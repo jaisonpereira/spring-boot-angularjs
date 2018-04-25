@@ -29,6 +29,12 @@ public class UsuarioTest extends TestCase {
 	}
 
 	@Test
+	public void testUserNull() throws Exception {
+		user = service.find(1);
+		assertEquals(user.getNome(), "Jason");
+	}
+
+	@Test
 	public void testSaveUser() {
 		try {
 			user.setNome("Jason");
